@@ -19,5 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         MainActivityComponent component = DaggerMainActivityComponent.builder().mainActivityModuel(new MainActivityModuel()).build();
         component.inject(this);
+
+        //添加注释
     }
 }
